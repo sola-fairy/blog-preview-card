@@ -12,7 +12,7 @@
 
 
   <style>
-    body {
+   body {
       background: hsl(47, 88%, 63%);
       display: flex;
       flex-direction: column;
@@ -29,16 +29,64 @@
       display: flex;
       flex-direction: column;
       border-radius: 15px;
-      width: 30vw;
-      height: 50vh;
+      width: 20vw;
+      min-width: 300px;
       border: 1px solid black;
-      box-shadow: 6px 4px 0px black;
+      box-shadow: 8px 8px 0px black;
       margin-bottom: 25px;
-      padding: 25px;
+      padding: 25px 25px 0px;
+      color: hsl(0, 0%, 7%);
     }
     
     main img {
       width: 100%;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+    
+    .tag {
+      display: inline-block;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      width: fit-content;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      font-weight: bold;
+      background-color: hsl(47, 88%, 63%);
+    }
+    
+    .date {
+      font-size: 14px;
+    }
+    
+    h1 {
+      font-size: 25px;
+    }
+    
+    .blurb {
+      color: hsl(0, 0%, 42%);
+      margin-bottom: 20px;
+      line-height: 140%;
+    }
+    
+    .by-line {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .by-line img {
+      border-radius: 50%;
+      width: 10%;
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+    
+    .author {
+      font-weight: bold;
     }
 
     footer { font-size: 11px; text-align: center; }
@@ -47,16 +95,16 @@
 </head>
 <body>
 <main>
-  <img src="" alt="">
-  Learning
+  <img src="https://raw.githubusercontent.com/sola-fairy/blog-preview-card/3cd45d8336db5709e051addb3974647d1930d150/assets/images/illustration-article.svg" alt="Blog Banner">
+  <div class="tag">Learning</div>
 
-  Published 21 Dec 2023
+  <div class="date">Published 21 Dec 2023</div>
 
-  HTML & CSS foundations
+  <h1>HTML & CSS foundations</h1>
 
-  These languages are the backbone of every website, defining structure, content, and presentation.
+  <div class="blurb">These languages are the backbone of every website, defining structure, content, and presentation.</div>
 
-  Greg Hooper
+  <div class="by-line"><img src="https://github.com/sola-fairy/blog-preview-card/blob/main/assets/images/image-avatar.webp?raw=true" alt="Greg Hooper"><div class="author">Greg Hooper</div></div>
   </main>
   <footer>
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
